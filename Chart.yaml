@@ -1,5 +1,5 @@
-name: mlapp-v2
+name: tfexample
 version: 1.0.0
 type: mlapp
-description: Test mlapp v2
+description: Test mlapp v2 - tfexample
 engine: gotpl
