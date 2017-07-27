@@ -23,7 +23,8 @@ spec:
         cpu: busybox
       command:
       - 'echo'
-      args: 'pythonpath=$PYTHONPATH;pwd=$(pwd)'
+      args:
+      - 'pythonpath=$PYTHONPATH;pwd=$(pwd)'
       workdir: "$SRC_DIR"
       env:
       - name: TEST_ENV_V1
