@@ -21,7 +21,8 @@ spec:
       images:
         gpu: busybox
         cpu: busybox
-      command: 'echo'
+      command:
+      - 'echo'
       args: 'pythonpath=$PYTHONPATH;pwd=$(pwd)'
       workdir: "$SRC_DIR"
       env:
@@ -53,7 +54,8 @@ spec:
       waitCount: 0
       images:
         cpu: busybox
-      command:  "/bin/sh -c  \"while true; do echo hi; sleep 10; done;\""
+      command:
+      - "/bin/sh -c  \"while true; do echo hi; sleep 10; done;\""
       workdir: "$SRC_DIR"
       port: 9000
       env:
